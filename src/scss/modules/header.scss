@@ -1,15 +1,16 @@
 .header{
-    display: flex;
-    align-items: center;
-    justify-content: space-between;
-
-    padding-top: 18px;
-    padding-bottom: 19px;
-
+    background-color: $bg-dark;
+    width: 100%;
+    &-container{
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+        padding-top: 18px;
+        padding-bottom: 19px;
+    }
     &-wrap{
-        width: 100%;
-        background-color: $bg-dark;
         position: relative;
+        z-index: 10;
     }
     &-left{
         display: flex;

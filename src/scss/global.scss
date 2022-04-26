@@ -9,12 +9,15 @@ html{
 body{
     font-family: lato;
     height: 100%;
-    display: flex;
-    flex-direction: column;
     overflow-x: hidden;
 }
+.wrapper{
+    min-height: 100%;
+    display: flex;
+    flex-direction: column;
+}
 main{
-    flex-grow: 1;
+    flex: 1 1 auto;
 }
 .container{
     max-width: $mx-wdth;
@@ -31,4 +34,18 @@ main{
 }
 a{
     text-decoration: none;
+}
+h1, h2, h3, h4, h5, h6{
+    margin: 0;
+}
+.accent-text{
+    color: $clr-accent;
+}
+.main{
+    &__intro{
+        margin-bottom: 65px;
+    }
+    &__offer{
+        margin-bottom: 96px;
+    }
 }

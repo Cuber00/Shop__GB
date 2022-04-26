@@ -1,0 +1,14 @@
+.offer{
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    gap: 30px;
+    height:auto;
+    @media(max-width:630px){
+        grid-template-columns: 1fr 1fr;
+        gap: 16px;
+    }
+    @media(max-width:475px){
+        grid-template-columns: 1fr;
+        gap: 32px;
+    }
+}
