@@ -41,11 +41,19 @@ h1, h2, h3, h4, h5, h6{
 .accent-text{
     color: $clr-accent;
 }
+.title-h2{
+    font-weight: 400;
+    font-size: 30px;
+    line-height: 36px;
+}
 .main{
     &__intro{
         margin-bottom: 65px;
     }
     &__offer{
         margin-bottom: 96px;
+    }
+    &__products{
+        margin-bottom: 95px;
     }
 }

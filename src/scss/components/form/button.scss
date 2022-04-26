@@ -1,0 +1,31 @@
+.btn{
+    padding: 15px 39px 14px;
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 19px;
+    border-radius: 0;
+    background: transparent;
+    border: 1px solid transparent;
+    outline: 1px solid transparent;
+    transition: all .4s;
+    cursor: pointer;
+    &--accent{
+        color: $clr-accent;
+        border: 1px solid $bg-accent;
+        &:hover{
+            background-color: $bg-accent;
+            color: #ffffff;
+        }
+    }
+    &--white{
+        color: #ffffff;
+        border: 1px solid #ffffff;
+        &:hover{
+            color: $clr-accent;
+            border: 1px solid $bg-accent;
+        }
+    }
+    &:focus{
+        outline: 2px solid $bg-accent;
+    }
+}

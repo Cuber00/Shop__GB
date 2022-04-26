@@ -1,0 +1,30 @@
+.products{
+    &__text{
+        max-width: 670px;
+        text-align: center;
+        margin: 0 auto 48px; 
+        cursor: default;
+    }
+    &__title{
+        margin-bottom: 6px;
+        color: #222222;
+    }
+    &__desc{
+        font-weight: 400;
+        font-size: 14px;
+        line-height: 17px;
+        color: #9F9F9F;
+    }
+    &__content{
+        margin-bottom: 48px;
+        display: flex;
+        justify-content: center;
+        flex-wrap: wrap;
+        gap: 30px;
+    }
+    &__control{
+        width: 100%;
+        display: flex;
+        justify-content: center;
+    }
+}
