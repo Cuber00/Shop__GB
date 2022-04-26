@@ -1,0 +1,46 @@
+.footer{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    gap: 30px;
+    padding-top: 24px;
+    padding-bottom: 23px;
+    color: #ffffff;
+    &-wrap{
+        background-color: $bg-dark;
+        
+    }
+    @media (max-width: 425px) {
+        flex-direction: column-reverse;
+        justify-content:center;
+        .copyright{
+            text-align: center;
+        }
+    }
+}
+
+.social{
+    display: flex;
+    align-items: center;
+    gap: 7.29px;
+    &__item{
+        height:31.45px;
+        width: 32px;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        background-color: #ffffff;
+        transition: all .42s;
+        path{
+            fill: #000000;
+            transition: fill .42s;
+        }
+        &:hover{
+            background-color: $bg-accent;
+            path{
+                fill: #ffffff;
+            }
+        }
+    }
+    
+}

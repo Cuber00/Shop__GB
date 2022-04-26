@@ -1,0 +1,81 @@
+.header{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+
+    padding-top: 18px;
+    padding-bottom: 19px;
+
+    &-wrap{
+        width: 100%;
+        background-color: $bg-dark;
+        position: relative;
+    }
+    &-left{
+        display: flex;
+        align-items: center;
+        gap: 41px;
+    }
+    &-rigth{
+        display: flex;
+        align-items: center;
+        gap: 33px;
+        justify-content: flex-end;
+    }
+    &__search{
+        width: 26px;
+        height: 26px;
+        position: relative;
+        top: 4px;
+    }
+    &__inp-search{
+        display: none
+    }
+    &__burger-icon{
+        width: 32px;
+    }
+    &__profile-link{
+        width: 29px;
+    }
+    &__basket-icon{
+        display: inline-block;
+        width: 32px;
+
+        &--activ{
+            position: relative;
+            right: 9px;
+            &::after{
+                content:"5";
+                width: 19px;
+                height: 19px;
+                border-radius: 50%;
+                background-color: $bg-accent;
+                color: #ffffff;
+                display: flex;
+                align-items: center;
+                justify-content:center;
+                position: absolute;
+                top: -8px;
+                right: -9px;
+                font-size: 12px;
+            }
+        }
+    }
+    svg{
+        cursor: pointer;
+        path{
+            fill: #E8E8E8;
+            transition: fill .42s;
+        }
+        &:hover path{
+            fill: $clr-accent;
+        }
+    }
+
+    @media(max-width:425px){
+        &__profile-link,
+        &__basket-icon{
+            display: none;
+        }
+    }
+}

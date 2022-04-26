@@ -1,5 +1,12 @@
 @import 'fonts.scss';
 @import 'reset.scss';
 @import 'libs.scss';
+@import 'function.scss';
 @import 'vars.scss';
 @import 'global.scss';
+
+@import 'components/form/input.scss';
+
+@import 'modules/header.scss';
+@import 'modules/menu.scss';
+@import 'modules/footer.scss';

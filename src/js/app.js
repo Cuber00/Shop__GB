@@ -1,3 +1,8 @@
-import * as flsFunctions from './modules/functions.js'
+import * as flsFunctions from './modules/functions.js';
+import {addEvents} from "./modules/events.js";
 
-flsFunctions.isWebp()
+flsFunctions.isWebp();
+
+document.addEventListener('DOMContentLoaded', () => {
+    addEvents();
+})
