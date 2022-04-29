@@ -8,6 +8,7 @@
     border: 1px solid transparent;
     outline: 1px solid transparent;
     transition: all .4s;
+    text-align: center;
     cursor: pointer;
     &--accent{
         color: $clr-accent;
