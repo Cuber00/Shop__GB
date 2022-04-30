@@ -56,4 +56,10 @@ h1, h2, h3, h4, h5, h6{
     &__products{
         margin-bottom: 95px;
     }
+    @media(max-width:345px){
+        .pagination__item:nth-child(5),
+        .pagination__item:nth-child(6){
+            display: none;
+        }
+    }
 }
