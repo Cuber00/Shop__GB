@@ -8,6 +8,14 @@
         @@include('html/modules/header.html', {})
         <main class="main">
 
+            @@include('html/modules/breadcrumb.html',{
+                title: "NEW ARRIVALS",
+                srcCategor: "MEN",
+                srcAccent: "NEW ARRIVALS",
+            })
+
+            @@include('html/modules/product.html')
+
             @@include('html/modules/feature.html', {})
             @@include('html/modules/subscribe.html', {})
         </main>
